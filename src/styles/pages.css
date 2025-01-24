@@ -1,0 +1,84 @@
+/*estilo para "pages/pages.tsx"*/
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.heading-text {
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.weather-info {
+    background-color: #f7fafc;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.weather-info h3 {
+    color: #2b6cb0;
+}
+
+.weather-info p {
+    color: #4a5568;
+    font-size: 18px;
+}
+
+/* Botón*/
+.map-button {
+    background-color: #3182ce;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.map-button:hover {
+    background-color: #2c5282;
+}
+
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Mapa (Simulado) */
+.map-container {
+    background-color: #e2e8f0;
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+}
+
+/* Estilo del clima */
+.weather-info p {
+    font-size: 16px;
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .section-container {
+        padding: 1rem;
+    }
+
+    .heading-text {
+        font-size: 20px;
+    }
+
+    .weather-info {
+        padding: 0.5rem;
+    }
+
+    .map-container {
+        height: 300px;
+    }
+
+    .map-button {
+        padding: 0.5rem 0.8rem;
+    }
+}
