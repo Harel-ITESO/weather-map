@@ -20,6 +20,8 @@ export default function Weather({ lat, lon }: WeatherProps) {
             try {
                 setLoading(true);
                 const data = await getWeatherData(lat, lon);
+                //Datos del clima
+                //console.log(data);
                 if (!data) throw new Error("No weather data available");
                 setWeatherData(data);
             } catch (err) {
