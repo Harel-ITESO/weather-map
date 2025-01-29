@@ -20,7 +20,7 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           {/*Componente del mapa*/}
-          <Maps onLocationSelect={handleLocationSelect} />
+          <Maps onLocationSelect={handleLocationSelect}/>
         </div>
 
         {/*Componente del clima*/}
