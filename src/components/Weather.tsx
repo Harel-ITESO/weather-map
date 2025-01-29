@@ -39,7 +39,7 @@ export default function Weather({ lat, lon }: WeatherProps) {
 
     //HTML
     return (
-        <div className="bg-white p-6 rounded-lg shadow-lg">
+        <div className="weather-info">
             <h2 className="text-2xl font-bold mb-4">{weatherData.name}</h2>
             <p className="text-lg">Temperatura: {weatherData.main.temp}°C</p>
             <p className="text-lg">Clima: {weatherData.weather[0].description}</p>
